@@ -28,6 +28,9 @@ dist/
 .angular/
 coverage/
 
+# Netlify local metadata
+.netlify/
+
 # OS files
 .DS_Store
 Thumbs.db
