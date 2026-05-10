@@ -1,0 +1,33 @@
+# Spring Boot / Java / Maven / Gradle
+target/
+build/
+.gradle/
+*.class
+*.jar
+*.war
+*.ear
+*.log
+
+# IDE / editor metadata
+.classpath
+.project
+.settings/
+.metadata/
+.idea/
+*.iml
+.vscode/
+
+# Angular / Node
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/
+frontend/coverage/
+frontend/.npm-cache/
+node_modules/
+dist/
+.angular/
+coverage/
+
+# OS files
+.DS_Store
+Thumbs.db

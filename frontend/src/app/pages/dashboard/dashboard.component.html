@@ -1,0 +1,26 @@
+<div class="app-shell">
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">Secure Password Vault</p>
+      <h1>Dashboard</h1>
+    </div>
+
+    <nav class="nav-actions" aria-label="Main navigation">
+      <a routerLink="/dashboard/passwords" routerLinkActive="active-link">Vault</a>
+      <a routerLink="/dashboard/passwords/add" routerLinkActive="active-link">Add</a>
+      <button type="button" class="secondary-button" (click)="logout()">Logout</button>
+    </nav>
+  </header>
+
+  <main class="content">
+    <div class="dashboard-card user-strip">
+      <div>
+        <span>Signed in as</span>
+        <strong>{{ authService.getName() || authService.getEmail() }}</strong>
+      </div>
+      <small>{{ authService.getEmail() }}</small>
+    </div>
+
+    <router-outlet></router-outlet>
+  </main>
+</div>
